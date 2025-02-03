@@ -9,7 +9,7 @@ interface Skills {
   relatedSkills?: string[]
 }
 
-const Skills = () => {
+export default function Skills() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -30,7 +30,6 @@ const Skills = () => {
   };
 
   const skills : Skills[] = skillsData
-
   return (
     <section className="skill skills-section" id="skills">
         <div className="container">
@@ -67,5 +66,3 @@ const Skills = () => {
     </section>
   )
 }
-
-export default Skills

@@ -9,7 +9,7 @@ import { faM } from '@fortawesome/free-solid-svg-icons';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
 
-const NavBar = () => {
+export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -110,5 +110,3 @@ const NavBar = () => {
     </Navbar>
   );
 };
-
-export default NavBar;

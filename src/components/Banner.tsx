@@ -2,7 +2,7 @@ import '../css/Banner.css'
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/melvin.png";
 
-const Banner = () => {
+export default function Banner() {
   return (
     <section id="home">
       <div className="banner-section">
@@ -33,5 +33,3 @@ const Banner = () => {
     </section>
   )
 }
-
-export default Banner

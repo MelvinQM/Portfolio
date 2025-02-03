@@ -12,7 +12,7 @@ interface WorkExperience {
   description: string
 }
 
-const About = () => {
+export default function About() {
   const workExperience: WorkExperience[] = workExperienceData
 
   return (
@@ -56,5 +56,3 @@ const About = () => {
     </section>
   )
 }
-
-export default About

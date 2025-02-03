@@ -1,11 +1,9 @@
-function Connect() {
-
+export default function Connect() {
     return (
       <>
           Connect
       </>
     )
-  }
+}
   
-  export default Connect
   

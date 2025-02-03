@@ -4,8 +4,14 @@ interface Project {
     description: string,
     skills: string[],
     thumbnailPath?: string,
+    media: MediaObject[],
     projectURL?: string,
     githubURL?: string
+}
+
+interface MediaObject {
+    path: string,
+    isVideo: boolean
 }
 
 interface WorkExperience {

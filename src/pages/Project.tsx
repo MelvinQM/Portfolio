@@ -10,7 +10,7 @@ export default function Project() {
         return <h1>Project not found</h1>
     }
 
-    const mediaSrc = project.media?.length ? `/assets/img/${project.media[0].path}` : "";
+    const mediaSrc = project.media?.length ? `/assets/${project.media[0].path}` : "";
     console.log(mediaSrc)
   return (
     <div className='project-container'>

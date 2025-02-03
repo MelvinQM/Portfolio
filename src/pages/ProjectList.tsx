@@ -29,7 +29,7 @@ export default function ProjectList() {
               onClick={() => handleProjectClick(project.id)} // Handle click to navigate
               >
               <h2>{project.name}</h2>
-              <img src={`/../assets/thumbnails/${project.thumbnailPath || "placeholder.jpg"}`} alt="thumbnail" />
+              <img src={`/../assets/${project.thumbnailPath || "thumbnails/placeholder.jpg"}`} alt="thumbnail" />
               <p className='text-start'>Project summary</p>
             </div>
           ))}

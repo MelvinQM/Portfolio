@@ -7,14 +7,14 @@
       "media": [
         {
           "type": "image",
-          "path": "fys/fys.gif"
+          "path": "img/fys/fys.gif"
         },
         {
           "type": "video",
-          "path": "placeholder.mp4"
+          "path": "video/placeholder.mp4"
         }
       ],
-      "thumbnailPath": "placeholder.jpg",
+      "thumbnailPath": "img/fys/fys.gif",
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
@@ -31,17 +31,6 @@
       "name": "Project 1",
       "description": "Description 1",
       "skills": ["Skill 1", "Skill 2"],
-      "media": [
-        {
-          "type": "image",
-          "path": "placeholder.jpg"
-        },
-        {
-          "type": "video",
-          "path": "placeholder.mp4"
-        }
-      ],
-      "thumbnailPath": "placeholder.jpg",
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },

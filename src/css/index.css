@@ -15,10 +15,7 @@ body {
   background-size: 50px 50px;
 }
 
-.custom-a {
-  color: var(--portfolio-green);
-  text-decoration: none;
-}
+
 
 :root {
   --primary-color: white;
@@ -35,6 +32,16 @@ body {
   --portfolio-green: #adc7b2;
   --subtext-color: #8b8b8b;
 } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
 
 
 /*Custom fonts*/
@@ -67,9 +74,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-.container {
+.page-container {
   display: 'flex';
   flex-direction: 'column';
 }
 
+.custom-a {
+  color: var(--portfolio-green);
+  text-decoration: none;
+}
 

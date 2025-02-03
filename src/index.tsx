@@ -12,21 +12,16 @@ import NavBar from './components/NavBar'
 import './css/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 const AppLayout = () => {
   return (
     <>
       <NavBar />
-      <main className="content">
+      <main >
         <Outlet />
       </main>
     </>
   );
 };
-
-export default AppLayout;
-
 
 const router = createBrowserRouter([
   {

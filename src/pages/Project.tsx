@@ -10,18 +10,30 @@ export default function Project() {
         return <h1>Project not found</h1>
     }
 
+    const mediaSrc = project.media?.length ? `/assets/img/${project.media[0].path}` : "";
+    console.log(mediaSrc)
   return (
     <div className='project-container'>
       
-      <div className='project-media'>
-        <h1>Media</h1>
-        <img src={`/../assets/thumbnails/${project.thumbnailPath}`} alt="thumbnail" />
+      <div className='project-header'>
+        <h1 className='m-1'>{project.name}</h1>  
       </div>
-      
-      <div className='project-info'>      
-        <h1>{project.name}</h1>  
-        <h1>{project.description}</h1>
+
+      <div className='project-content'>
+        <div className='project-media-container'>
+          <div className='project-media'>
+            <img src={mediaSrc} alt="thumbnail" />
+          </div>
+        </div>
+        
+        <div className='project-info-container'>      
+          <div className='project-info'>
+            <h4 className='text-start m-2'>Description</h4>
+            <p className='text-start m-2'>{project.description}</p>
+          </div>
+        </div>
       </div>
+
 
     </div>
   )

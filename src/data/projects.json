@@ -1,9 +1,19 @@
 [
     {
       "id": 1,
-      "name": "Project 1",
-      "description": "Description 1",
-      "skills": ["Skill 1", "Skill 2"],
+      "name": "Fasten your seatbelts",
+      "description": "This project was about creating an embedded system using an Odroid. Together with a team of students we designed a air hockey table with an autonomous opponent. Through the use of random movements the robot armed opponent would knock back the puck. We worked using Python and used a kit of sensors and various components.",
+      "skills": ["Python", "Embedded programming", "3D printing"],
+      "media": [
+        {
+          "type": "image",
+          "path": "fys/fys.gif"
+        },
+        {
+          "type": "video",
+          "path": "placeholder.mp4"
+        }
+      ],
       "thumbnailPath": "placeholder.jpg",
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
@@ -17,35 +27,30 @@
       "githubURL": "https://www.github.com"
     },
     {
-        "id": 3,
-        "name": "Project 3",
-        "description": "Description 3",
-        "skills": ["Skill 2", "Skill 3"],
-        "projectURL": "https://www.example.com",
-        "githubURL": "https://www.github.com"
+      "id": 3,
+      "name": "Project 1",
+      "description": "Description 1",
+      "skills": ["Skill 1", "Skill 2"],
+      "media": [
+        {
+          "type": "image",
+          "path": "placeholder.jpg"
+        },
+        {
+          "type": "video",
+          "path": "placeholder.mp4"
+        }
+      ],
+      "thumbnailPath": "placeholder.jpg",
+      "projectURL": "https://www.example.com",
+      "githubURL": "https://www.github.com"
     },
     {
-        "id": 4,
-        "name": "Project 4",
-        "description": "Description 4",
-        "skills": ["Skill 1", "Skill 2"],
-        "projectURL": "https://www.example.com",
-        "githubURL": "https://www.github.com"
-      },
-      {
-        "id": 5,
-        "name": "Project 5",
-        "description": "Description 5",
-        "skills": ["Skill 1", "Skill 2"],
-        "projectURL": "https://www.example.com",
-        "githubURL": "https://www.github.com"
-      },
-      {
-          "id": 6,
-          "name": "Project 6",
-          "description": "Description 6",
-          "skills": ["Skill 2", "Skill 3"],
-          "projectURL": "https://www.example.com",
-          "githubURL": "https://www.github.com"
-      }
+      "id": 4,
+      "name": "Project 2",
+      "description": "Description 2",
+      "skills": ["Skill 1", "Skill 2"],
+      "projectURL": "https://www.example.com",
+      "githubURL": "https://www.github.com"
+    }
 ] 

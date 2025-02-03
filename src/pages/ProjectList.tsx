@@ -23,14 +23,14 @@ export default function ProjectList() {
         <div className="projects-container">
           {projects.map((project, index) => (
             <div
-              key={project.id}
+              key={index}
               className="project"
               style={{ '--i': index } as React.CSSProperties} // Passing index as a CSS variable
               onClick={() => handleProjectClick(project.id)} // Handle click to navigate
               >
               <h2>{project.name}</h2>
-              <img src={`/../assets/thumbnails/placeholder.jpg`} alt="thumbnail" />
-              <p>{project.description}</p>
+              <img src={`/../assets/thumbnails/${project.thumbnailPath || "placeholder.jpg"}`} alt="thumbnail" />
+              <p className='text-start'>Project summary</p>
             </div>
           ))}
         </div>

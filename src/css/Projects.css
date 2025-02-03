@@ -1,0 +1,16 @@
+.projects-container {
+    background-color: red;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: blue;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 5px;
+}

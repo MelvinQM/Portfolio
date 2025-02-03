@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Project 1",
+      "description": "Description 1",
+      "skills": ["Skill 1", "Skill 2"],
+      "projectURL": "https://www.example.com",
+      "githubURL": "https://www.github.com"
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "description": "Description 2",
+      "skills": ["Skill 1", "Skill 2"],
+      "projectURL": "https://www.example.com",
+      "githubURL": "https://www.github.com"
+    },
+    {
+        "id": 3,
+        "name": "Project 3",
+        "description": "Description 3",
+        "skills": ["Skill 2", "Skill 3"],
+        "projectURL": "https://www.example.com",
+        "githubURL": "https://www.github.com"
+    }
+] 

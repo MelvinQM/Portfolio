@@ -4,6 +4,7 @@
       "name": "Project 1",
       "description": "Description 1",
       "skills": ["Skill 1", "Skill 2"],
+      "thumbnailPath": "placeholder.jpg",
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },

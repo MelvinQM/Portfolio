@@ -1,0 +1,20 @@
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.project-media {
+    background-color: red;
+    width: 800px;
+    height: 500px;
+}
+
+.project-info {
+    background-color: green;
+    width: 400px;
+    height: 500px;
+}

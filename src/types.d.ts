@@ -3,6 +3,7 @@ interface Project {
     name: string,
     description: string,
     skills: string[],
+    thumbnailPath?: string,
     projectURL?: string,
     githubURL?: string
 }

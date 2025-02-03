@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 import Connect from './pages/Connect';
 import Home from './pages/Home'
-import ProjectList from './pages/Projects';
+import ProjectList from './pages/ProjectList';
 import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar'
 import Project from './pages/Project';

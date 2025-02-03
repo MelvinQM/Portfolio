@@ -1,6 +1,6 @@
 import '../css/Banner.css'
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/melvin.png";
+import headerImg from "/assets/img/melvin.png";
 
 export default function Banner() {
   return (

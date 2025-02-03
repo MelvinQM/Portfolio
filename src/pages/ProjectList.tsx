@@ -27,8 +27,9 @@ export default function ProjectList() {
               className="project"
               style={{ '--i': index } as React.CSSProperties} // Passing index as a CSS variable
               onClick={() => handleProjectClick(project.id)} // Handle click to navigate
-            >
+              >
               <h2>{project.name}</h2>
+              <img src={`/../assets/thumbnails/placeholder.jpg`} alt="thumbnail" />
               <p>{project.description}</p>
             </div>
           ))}

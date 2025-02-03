@@ -3,11 +3,6 @@ import "react-multi-carousel/lib/styles.css";
 import Carousel from 'react-multi-carousel';
 import { CircularSliderWithChildren } from 'react-circular-slider-svg';
 import skillsData from '../data/skills.json'
-interface Skills {
-  name: string,
-  percentage: number,
-  relatedSkills?: string[]
-}
 
 export default function Skills() {
   const responsive = {

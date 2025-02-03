@@ -2,15 +2,6 @@ import '../css/About.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import workExperienceData from '../data/workExperience.json'
 
-interface WorkExperience {
-  order: number,
-  date: string | string[],
-  jobTitle: string,
-  company: string,
-  companyURL?: string,
-  skills: string[],
-  description: string
-}
 
 export default function About() {
   const workExperience: WorkExperience[] = workExperienceData

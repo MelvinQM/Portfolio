@@ -2,7 +2,7 @@ import '../css/Skills.css'
 import "react-multi-carousel/lib/styles.css";
 import Carousel from 'react-multi-carousel';
 import { CircularSliderWithChildren } from 'react-circular-slider-svg';
-
+import skillsData from '../data/skills.json'
 interface Skills {
   name: string,
   percentage: number,
@@ -29,32 +29,7 @@ const Skills = () => {
     }
   };
 
-  const skills : Skills[] = [
-    {
-      name: "Web Development",
-      percentage: 75,
-      relatedSkills: [".NET", "Vue", "React"]
-    },
-    {
-      name: "Embedded Programming",
-      percentage: 85,
-      relatedSkills: ["C/C++", "PlatformIO", "Arduino"]
-    },
-    {
-      name: "Teamwork",
-      percentage: 90,
-    },
-    {
-      name: "Software Development",
-      percentage: 80,
-      relatedSkills: ["Java", "Python"]
-    },
-    {
-      name: "Game Development",
-      percentage: 65,
-      relatedSkills: ["C#", "Unity"]
-    },
-  ]
+  const skills : Skills[] = skillsData
 
   return (
     <section className="skill skills-section" id="skills">

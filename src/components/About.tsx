@@ -1,5 +1,6 @@
 import '../css/About.css'
 import { Col, Container, Row } from 'react-bootstrap'
+import workExperienceData from '../data/workExperience.json'
 
 interface WorkExperience {
   order: number,
@@ -12,40 +13,7 @@ interface WorkExperience {
 }
 
 const About = () => {
-  const workExperience : WorkExperience[] =
-    [
-      {
-          order: 2,
-          date: "02/24 - 06/24",
-          jobTitle: "Research & Development",
-          company: "Van Berge Henegouwen",
-          companyURL: "https://www.vbhi.com/",
-          skills: ["C++", "Arduino", "WebGL", "Typescript", "Vue.js"],
-          description:"During my internship, I worked on creating a product from start to finish. " +
-                      "I worked on 3D graphics with Three.js, web development with Typescript, " +
-                      "and embedded programming through the Arduino library and C++."
-      },
-      {
-          order: 1,
-          date: ["08/23 - 01/24", "08/24 - Present"],
-          jobTitle: "Research & Development",
-          company: "Chipsoft",
-          companyURL: "https://www.chipsoft.com/",
-          skills: ["C#" , ".NET",  "Blazor"],
-          description:"Worked on web development projects together with a team of students. " + 
-                      "I used programming languages: C# & Typescript, and also worked with frameworks: Next.js & Blazor."
-      },
-      {
-          order: 3,
-          date: "01/20 - Present",
-          jobTitle: "Helpdesk / Administration",
-          company: "Compuclub",
-          skills: [""],
-          description:"My activities at Compuclub include managing company's email correspondence," +
-                      "invoicing payments, and various tasks such as creating logos/posters and more in Photoshop."
-      },
-  ]
-
+  const workExperience: WorkExperience[] = workExperienceData
 
   return (
     <section className="box about-section" id="about">

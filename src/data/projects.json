@@ -22,5 +22,29 @@
         "skills": ["Skill 2", "Skill 3"],
         "projectURL": "https://www.example.com",
         "githubURL": "https://www.github.com"
-    }
+    },
+    {
+        "id": 4,
+        "name": "Project 4",
+        "description": "Description 4",
+        "skills": ["Skill 1", "Skill 2"],
+        "projectURL": "https://www.example.com",
+        "githubURL": "https://www.github.com"
+      },
+      {
+        "id": 5,
+        "name": "Project 5",
+        "description": "Description 5",
+        "skills": ["Skill 1", "Skill 2"],
+        "projectURL": "https://www.example.com",
+        "githubURL": "https://www.github.com"
+      },
+      {
+          "id": 6,
+          "name": "Project 6",
+          "description": "Description 6",
+          "skills": ["Skill 2", "Skill 3"],
+          "projectURL": "https://www.example.com",
+          "githubURL": "https://www.github.com"
+      }
 ] 

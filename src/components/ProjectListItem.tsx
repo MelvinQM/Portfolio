@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function ProjectListItem({ project, className }: { project: Project, className: string })
 {
     const navigate = useNavigate();
-    const handleProjectClick = (projectId: number) => {
-        navigate(`/projects/${projectId}`);
-    }
+    const handleProjectClick = (projectId: number) => navigate(`/projects/${projectId}`);
 
     return (
         <div

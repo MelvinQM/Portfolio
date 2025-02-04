@@ -20,25 +20,46 @@
     },
     {
       "id": 2,
-      "name": "Project 2",
-      "description": "Description 2",
-      "skills": ["Skill 1", "Skill 2"],
+      "name": "PAD - NAO Robot",
+      "description": "Worked with a team of students to create an entertaining fitness routine for elderly people. The NAO robot would guide the user through a series of exercises. The project was done in Java and Android Studio. We also used the Choregraphe software to program the robot.",
+      "skills": ["Java", "Android Studio", "Embedded programming", "Computer vision"],
+      "media": [
+        {
+          "type": "image",
+          "path": "img/pad/nao-robot.jpg"
+        }
+      ],
+      "thumbnailPath": "img/pad/nao-robot.jpg",
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
       "id": 3,
-      "name": "Project 1",
+      "name": "Robot on Wheels",
       "description": "Description 1",
-      "skills": ["Skill 1", "Skill 2"],
+      "skills": ["C++", "Embedded programming", "Robotics", "Computer vision", "Android Studio"],
+      "thumbnailPath": "img/row/dumbot.jpg",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/row/dumbot.jpg"
+        }
+      ],
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
       "id": 4,
-      "name": "Project 2",
+      "name": "IoT Game console",
       "description": "Description 2",
       "skills": ["Skill 1", "Skill 2"],
+      "thumbnailPath": "img/hootpursuit/console.jpg",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/hootpursuit/console.jpg"
+        }
+      ],
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     }

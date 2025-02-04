@@ -5,10 +5,10 @@ import { Outlet } from 'react-router-dom';
 
 import Connect from './pages/Connect';
 import Home from './pages/Home'
-import ProjectList from './pages/ProjectList';
+import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar'
-import Project from './pages/Project';
+import ProjectView from './components/ProjectView';
 
 import './css/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -33,11 +33,11 @@ const router = createBrowserRouter([
       { path: 'connect', element: <Connect /> },
       { 
         path: 'projects', 
-        element: <ProjectList />, 
+        element: <Projects />, 
         children: [
           {
             path: ':projectId',
-            element: <Project />
+            element: <ProjectView />
           }
         ],
       },

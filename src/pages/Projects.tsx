@@ -1,0 +1,27 @@
+import ProjectListItem from '../components/ProjectListItem'
+import '../css/Projects.css'
+import projectsData from '../data/projects.json'
+import { Outlet } from 'react-router-dom'
+
+export default function Projects() {
+  const projects: Project[] = projectsData
+
+  return (
+    <>
+      {/* Renders individual project when selected */}
+      <div className='project-section'>
+        <Outlet />
+      </div>
+      
+      {/* List of all projects */}
+      <div className='projects-section'>
+        <h1 className='text-center mt-4'>Projects</h1>
+        <div className="projects-container">
+          {projects.map((project) => (
+            <ProjectListItem project={project} className="project"/>
+          ))}
+        </div>
+      </div>
+    </>
+  )
+}

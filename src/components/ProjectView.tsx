@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
-import '../css/Project.css'
+import '../css/ProjectView.css'
 import projectsData from '../data/projects.json'
 
-export default function Project() {
+export default function ProjectView() {
     const { projectId } = useParams<{ projectId: string }>(); // Get projectId from URL
     const project = projectsData.find(p => p.id === parseInt(projectId || '')); // Find project by ID
     console.log(project)

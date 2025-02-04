@@ -46,7 +46,3 @@
     transform: scale(1.05);
 }
 
-hr.rounded {
-    border-top: 8px solid #000000;
-    border-radius: 5px;
-}

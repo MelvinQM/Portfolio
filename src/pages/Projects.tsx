@@ -4,7 +4,10 @@ import projectsData from '../data/projects.json'
 import { Outlet } from 'react-router-dom'
 
 export default function Projects() {
-  const projects: Project[] = projectsData
+  const projects: Project[] = projectsData.map(project => ({
+    ...project,
+    skills: project.skills || []
+  }))
 
   return (
     <>

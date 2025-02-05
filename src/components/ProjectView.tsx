@@ -1,6 +1,8 @@
 import { useParams } from 'react-router-dom';
 import '../css/ProjectView.css'
 import projectsData from '../data/projects.json'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function ProjectView() {
     const { projectId } = useParams<{ projectId: string }>(); // Get projectId from URL
@@ -34,6 +36,12 @@ export default function ProjectView() {
         </div>
       </div>
 
+      <div className='project-footer'>
+        <a href={project.githubURL}>
+          <FontAwesomeIcon className="social-svg" icon={faGithub} />
+          <span className='ms-2'>Github Link</span>
+        </a>
+      </div>
 
     </div>
   )

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import SkillTag from "./SkillTag";
 
 export default function ProjectListItem({ project, className }: { project: Project, className: string })
 {
@@ -14,7 +15,9 @@ export default function ProjectListItem({ project, className }: { project: Proje
             >
             <h2>{project.name}</h2>
             <img src={`/../assets/${project.thumbnailPath || "img/thumbnails/placeholder.jpg"}`} alt="thumbnail" />
-            <p className='text-start'>Project summary</p>
+            <div className="mt-2 d-flex flex-wrap gap-2">
+                {project.skills.map((skill) => <SkillTag skillName={skill} />)}
+            </div>
         </div>
     )
 }

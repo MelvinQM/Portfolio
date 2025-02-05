@@ -3,6 +3,7 @@ interface Project {
     name: string,
     description: string,
     skills: string[],
+    status: string,
     thumbnailPath?: string,
     media?: MediaObject[],
     projectURL?: string,

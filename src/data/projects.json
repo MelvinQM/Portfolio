@@ -3,6 +3,7 @@
       "id": 1,
       "name": "Fasten your seatbelts",
       "description": "This project was about creating an embedded system using an Odroid. Together with a team of students we designed a air hockey table with an autonomous opponent. Through the use of random movements the robot armed opponent would knock back the puck. We worked using Python and used a kit of sensors and various components.",
+      "status": "Completed",
       "skills": ["Python", "Embedded programming", "3D printing"],
       "media": [
         {
@@ -22,6 +23,7 @@
       "id": 2,
       "name": "PAD - NAO Robot",
       "description": "Worked with a team of students to create an entertaining fitness routine for elderly people. The NAO robot would guide the user through a series of exercises. The project was done in Java and Android Studio. We also used the Choregraphe software to program the robot.",
+      "status": "Completed",
       "skills": ["Java", "Android Studio", "Embedded programming", "Computer vision"],
       "media": [
         {
@@ -38,6 +40,7 @@
       "name": "Robot on Wheels",
       "description": "Description 1",
       "skills": ["C++", "Embedded programming", "Robotics", "Computer vision", "Android Studio"],
+      "status": "Completed",
       "thumbnailPath": "img/row/dumbot.jpg",
       "media": [
         {
@@ -53,6 +56,7 @@
       "name": "IoT Game console",
       "description": "Description 2",
       "skills": ["Skill 1", "Skill 2"],
+      "status": "Completed",
       "thumbnailPath": "img/hootpursuit/console.jpg",
       "media": [
         {

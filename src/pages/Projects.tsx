@@ -17,8 +17,8 @@ export default function Projects() {
       <div className='projects-section'>
         <h1 className='text-center mt-4'>Projects</h1>
         <div className="projects-container">
-          {projects.map((project) => (
-            <ProjectListItem project={project} className="project"/>
+          {projects.map((project, index) => (
+            <ProjectListItem project={project} className="project" key={index}/>
           ))}
         </div>
       </div>

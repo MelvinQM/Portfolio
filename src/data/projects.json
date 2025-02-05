@@ -3,7 +3,9 @@
       "id": 1,
       "name": "Fasten your seatbelts",
       "description": "This project was about creating an embedded system using an Odroid. Together with a team of students we designed a air hockey table with an autonomous opponent. Through the use of random movements the robot armed opponent would knock back the puck. We worked using Python and used a kit of sensors and various components.",
+      "contribution": "I was responsible for the software development of the robot. I programmed the robot to move in random directions and to hit the puck. I also worked on the communication between the robot and the Odroid.",
       "status": "Completed",
+      "team": "5 students",
       "skills": ["Python", "Embedded programming", "3D printing"],
       "media": [
         {
@@ -23,7 +25,9 @@
       "id": 2,
       "name": "PAD - NAO Robot",
       "description": "Worked with a team of students to create an entertaining fitness routine for elderly people. The NAO robot would guide the user through a series of exercises. The project was done in Java and Android Studio. We also used the Choregraphe software to program the robot.",
+      "contribution": "I was responsible for the software development of the Android application. I programmed the application to communicate with the NAO robot and to display the exercises. I also worked on the user interface.",
       "status": "Completed",
+      "team": "4 students",
       "skills": ["Java", "Android Studio", "Embedded programming", "Computer vision"],
       "media": [
         {
@@ -39,8 +43,10 @@
       "id": 3,
       "name": "Robot on Wheels",
       "description": "Description 1",
+      "contribution": "I was responsible for the software development of the robot. I programmed the robot to move in random directions and to hit the puck. I also worked on the communication between the robot and the Odroid.",
       "skills": ["C++", "Embedded programming", "Robotics", "Computer vision", "Android Studio"],
       "status": "Completed",
+      "team": "4 students",
       "thumbnailPath": "img/row/dumbot.jpg",
       "media": [
         {
@@ -54,9 +60,10 @@
     {
       "id": 4,
       "name": "IoT Game console",
-      "description": "Description 2",
-      "skills": ["Skill 1", "Skill 2"],
+      "description": "For my time following the minor Internet of Things I created a game console. The system consists of 2 micro controller, one for the wireless controller and one for the console. All code written in C++ using PlatformIO.",
+      "contribution": "I was responsible for everything from developing the game to designing the 3D models. I also worked on the communication between the controller and the console I went through some iterations trying different protocols until being satisfied with using the ESP-NOW protocol.",
       "status": "Completed",
+      "team": "Solo project",
       "thumbnailPath": "img/hootpursuit/console.jpg",
       "media": [
         {

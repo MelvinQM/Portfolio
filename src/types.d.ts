@@ -2,6 +2,7 @@ interface Project {
     id: number,
     name: string,
     description: string,
+    contribution: string,
     skills: string[],
     status: string,
     thumbnailPath?: string,

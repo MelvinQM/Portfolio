@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .project-header {
@@ -46,14 +47,14 @@
 /* Info element section */
 .project-info-container {
     background-color: rgb(240, 240, 240);
-    width: 400px;
+    width: 600px;
     height: 500px;
 }
 
 .project-info {
     display: flex;
     flex-direction: column;
-    padding: 10px;  
+    padding: 5px;  
 }
 
 /* Project footer */
@@ -67,5 +68,5 @@
 .project-footer a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: ;
 }

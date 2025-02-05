@@ -10,12 +10,13 @@
     display: grid;
     width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    align-items: start; /* Ensures cards don't stretch */
 }
 
 .project {
     background-color: white;
     min-height: 350px;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     opacity: 0;
@@ -33,6 +34,7 @@
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* Animation for fading in */

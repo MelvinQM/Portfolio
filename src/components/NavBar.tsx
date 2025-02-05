@@ -2,7 +2,7 @@ import '../css/NavBar.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faM } from '@fortawesome/free-solid-svg-icons';
@@ -12,43 +12,42 @@ import { Link, useLocation } from 'react-router-dom';
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
+  const { hash } = useLocation();
 
   useEffect(() => {
+    let lastScrollY = window.scrollY; // Store last scroll position
+  
     const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      const currentScrollY = window.scrollY;
+      
+      if (Math.abs(currentScrollY - lastScrollY) > 40) {
+        setScrolled(currentScrollY > 65);
+        lastScrollY = currentScrollY;
       }
     };
-
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+  
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
+  
 
   useEffect(() => {
-    // Scroll to the section after the URL changes (based on hash)
-    const section = location.hash && document.querySelector(location.hash);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    const section = hash && document.querySelector(hash);
+    
+    if (section) section.scrollIntoView({ behavior: 'smooth' });
 
-    // Scroll to the top for the Home link
-    if (location.hash === '#home') {
-      window.scrollTo(0, 0);
-    }
-  }, [location]);
+    if (hash === '#home') window.scrollTo(0, 0);
+  }, [hash]);
 
-  const onUpdateActiveLink = (value: any) => {
+  const onUpdateActiveLink = useCallback((value: string) => {
     setActiveLink(value);
-  };
+  }, []);
 
   return (
-    <Navbar expand="md" className={`${scrolled ? "scrolled" : ""} shadow-effect`}>
-      <Container className='navbar-container'>
+    <Navbar expand="md" className={`${scrolled ? 'scrolled' : ''} shadow-effect`}>
+      <Container className="navbar-container">
         <Navbar.Brand as={Link} to="/">
-          <div className='navbar-logo d-flex'>
+          <div className="navbar-logo d-flex">
             <FontAwesomeIcon className="navbar-logo-border" icon={faSquare} />
             <FontAwesomeIcon className="navbar-logo-m-left" icon={faM} />
             <FontAwesomeIcon className="navbar-logo-m-right" icon={faM} />
@@ -62,7 +61,7 @@ export default function NavBar() {
             <Nav.Link
               as={Link}
               to="/#home"
-              className={activeLink === 'home' ? "active navbar-link" : "navbar-link"}
+              className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('home')}
             >
               Home
@@ -70,7 +69,7 @@ export default function NavBar() {
             <Nav.Link
               as={Link}
               to="/#about"
-              className={activeLink === 'about' ? "active navbar-link" : "navbar-link"}
+              className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('about')}
             >
               Experience
@@ -78,7 +77,7 @@ export default function NavBar() {
             <Nav.Link
               as={Link}
               to="/#skills"
-              className={activeLink === 'skills' ? "active navbar-link" : "navbar-link"}
+              className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('skills')}
             >
               Skills
@@ -86,14 +85,14 @@ export default function NavBar() {
             <Nav.Link
               as={Link}
               to="/projects"
-              className={activeLink === 'projects' ? "active navbar-link" : "navbar-link"}
+              className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >
               Projects
             </Nav.Link>
           </Nav>
-          <span className='navbar-text'>
-            <div className='social-icon'>
+          <span className="navbar-text">
+            <div className="social-icon">
               <a href="https://www.linkedin.com/in/melvin-moes-49652a290/">
                 <FontAwesomeIcon className="social-svg" icon={faLinkedinIn} />
               </a>
@@ -101,7 +100,7 @@ export default function NavBar() {
                 <FontAwesomeIcon className="social-svg" icon={faGithub} />
               </a>
             </div>
-            <button onClick={() => console.log("Connect")}>
+            <button onClick={() => console.log('Connect')}>
               <span>Let's Connect</span>
             </button>
           </span>
@@ -109,4 +108,4 @@ export default function NavBar() {
       </Container>
     </Navbar>
   );
-};
+}

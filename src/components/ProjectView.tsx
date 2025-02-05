@@ -31,22 +31,22 @@ export default function ProjectView() {
         
         <div className='project-info-container'>      
           <div className='project-info'>
-            <div className='text-muted'>
-              <h5 className='text-start'>Description</h5>
+            <div>
+              <h5 className='text-start text-muted'>Description</h5>
               <span className='text-start'>{project.description}</span>
             </div>
 
-            <div className='d-flex align-items-center mt-2'>
+            <div className='mt-2'>
               <h5 className='text-muted mb-0'>Status:</h5>
-              <span className='ms-1'>{project.status}</span>
+              <span className=''>{project.status}</span>
             </div>
 
-            <div className='d-flex align-items-center mb-0 mt-2'>
+            <div className='mt-2'>
               <h5 className='text-muted mb-0'>Team:</h5>
-              <span className='ms-1'>{project.team}</span>
+              <span className=''>{project.team}</span>
             </div>
 
-            <div className='d-flex gap-2 mt-2'>
+            <div className='d-flex gap-2 mt-auto flex-wrap m-2'>
               {project.skills?.map((skill, index) => <SkillTag skillName={skill} key={index}/>)}
             </div>
           </div>

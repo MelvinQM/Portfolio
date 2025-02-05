@@ -46,7 +46,9 @@
 
 /* Info element section */
 .project-info-container {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--primary-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
     width: 600px;
     height: 500px;
 }
@@ -54,7 +56,9 @@
 .project-info {
     display: flex;
     flex-direction: column;
-    padding: 5px;  
+    padding: 10px;  
+    height: 100%;
+    width: 100%;
 }
 
 /* Project footer */
@@ -68,5 +72,5 @@
 .project-footer a {
     color: var(--text-color);
     text-decoration: none;
-    font-size: ;
+    font-size: 1.5em;
 }

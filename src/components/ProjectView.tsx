@@ -54,10 +54,10 @@ export default function ProjectView() {
       </div>
 
       <div className='project-footer'>
-        <a href={project.githubURL}>
-          <FontAwesomeIcon className="social-svg" icon={faGithub} />
+        <button onClick={() => window.location.href = project.githubURL} className="project-footer-button">
+          <FontAwesomeIcon icon={faGithub} />
           <span className='ms-2'>Github Link</span>
-        </a>
+        </button>
       </div>
 
     </div>

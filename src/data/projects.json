@@ -74,5 +74,27 @@
       ],
       "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
+    },
+    {
+      "id": 5,
+      "name": "A Sol's Journey",
+      "description": "Entry in the PirateSoftware - Game Jam 15 with the theme Shadows & Alchemy. The game is a 2D topdown shooter where you play as a little soul named appropiately named Sol. It's a small demo showing some abilities and shooting mechanis ending with a mini boss. The game was developed in a few days together with 2 other students.",
+      "contribution": "I was responsible for most parts of the game including the art and coding the game mechanics. The other teammates unfortunately didn't have as much time to dedicate to the project at the time.",
+      "skills": ["C#", "Unity", "Aseprite"],
+      "status": "No longer in development",
+      "team": "3 students",
+      "thumbnailPath": "img/solsjourney/sol.png",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/solsjourney/sol.png"
+        },
+        {
+          "type": "video",
+          "path": "-m3nsi4TqE0?si=1nSkNjb0WJsWXjpD"
+        }
+      ],
+      "projectURL": "https://mevevlin.itch.io/a-sols-adventure",
+      "githubURL": "https://www.github.com"
     }
 ] 

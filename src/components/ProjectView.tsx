@@ -4,6 +4,8 @@ import projectsData from '../data/projects.json'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillTag from './SkillTag';
+import YoutubeEmbed from './YoutubeEmbed';
+import { Carousel } from 'react-bootstrap';
 
 export default function ProjectView() {
     const { projectId } = useParams<{ projectId: string }>(); // Get projectId from URL
@@ -13,8 +15,24 @@ export default function ProjectView() {
         return <h1>Project not found</h1>
     }
 
-    const mediaSrc = project.media?.length ? `/assets/${project.media[0].path}` : "";
-    console.log(mediaSrc)
+    const responsive = {
+      superLargeDesktop: {
+        breakpoint: { max: 4000, min: 3000 },
+        items: 1
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 1
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    };
   return (
     <div className='project-container'>
       
@@ -25,7 +43,17 @@ export default function ProjectView() {
       <div className='project-content'>
         <div className='project-media-container'>
           <div className='project-media'>
-            <img src={mediaSrc} alt="thumbnail" />
+            <Carousel className='w-100' interval={null}>
+              {project.media?.map((media, index) => (
+                <Carousel.Item className="carousel-media-container" key={index}>
+                  {media.type === 'video' ? (
+                    <YoutubeEmbed className="item" videoId={media.path} key={index} />
+                  ) : (
+                    <img className="item" src={`/assets/${media.path}`} alt="thumbnail" key={index} />
+                  )}
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </div>
         </div>
         

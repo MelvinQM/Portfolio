@@ -2,11 +2,24 @@
     {
       "id": 1,
       "name": "Fasten your seatbelts",
-      "description": "This project was about creating an embedded system using an Odroid. Together with a team of students we designed a air hockey table with an autonomous opponent. Through the use of random movements the robot armed opponent would knock back the puck. We worked using Python and used a kit of sensors and various components.",
+      "description": "This project was about creating an embedded system using an Odroid. Together with a team of students we designed an air hockey table with an autonomous opponent. Through the use of random movements the robot armed opponent would knock back the puck. We worked using Python and used a kit of sensors and various components.",
       "contribution": "I was responsible for the software development of the robot. I programmed the robot to move in random directions and to hit the puck. I also worked on the communication between the robot and the Odroid.",
       "status": "Completed",
       "team": "5 students",
-      "skills": ["Python", "Embedded programming", "3D printing"],
+      "skills": [
+        {
+          "name": "Python",
+          "type": "language"
+        },
+        {
+          "name": "Embedded programming",
+          "type": "tool"
+        },
+        {
+          "name": "3D printing",
+          "type": "other"
+        }
+      ],
       "media": [
         {
           "type": "image",
@@ -18,7 +31,6 @@
         }
       ],
       "thumbnailPath": "img/fys/fys.gif",
-      "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
@@ -28,7 +40,24 @@
       "contribution": "I was responsible for the software development of the Android application. I programmed the application to communicate with the NAO robot and to display the exercises. I also worked on the user interface.",
       "status": "Completed",
       "team": "4 students",
-      "skills": ["Java", "Android Studio", "Embedded programming", "Computer vision"],
+      "skills": [
+        {
+          "name": "Java",
+          "type": "language"
+        },
+        {
+          "name": "Android Studio",
+          "type": "framework"
+        },
+        {
+          "name": "Computer vision",
+          "type": "tool"
+        },
+        {
+          "name": "Embedded programming",
+          "type": "tool"
+        }
+      ],
       "media": [
         {
           "type": "image",
@@ -36,7 +65,6 @@
         }
       ],
       "thumbnailPath": "img/pad/nao-robot.jpg",
-      "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
@@ -44,7 +72,28 @@
       "name": "Robot on Wheels",
       "description": "Description 1",
       "contribution": "I was responsible for the software development of the robot. I programmed the robot to move in random directions and to hit the puck. I also worked on the communication between the robot and the Odroid.",
-      "skills": ["C++", "Embedded programming", "Robotics", "Computer vision", "Android Studio", "Java"],
+      "skills": [
+        {
+          "name": "C++",
+          "type": "language"
+        },
+        {
+          "name": "Embedded programming",
+          "type": "tool"
+        },
+        {
+          "name": "Computer vision",
+          "type": "tool"
+        },
+        {
+          "name": "Android Studio",
+          "type": "framework"
+        },
+        {
+          "name": "Java",
+          "type": "language"
+        }
+      ],
       "status": "Completed",
       "team": "4 students",
       "thumbnailPath": "img/row/dumbot.jpg",
@@ -54,7 +103,6 @@
           "path": "img/row/dumbot.jpg"
         }
       ],
-      "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
@@ -62,7 +110,44 @@
       "name": "IoT Game console",
       "description": "For my time following the minor Internet of Things I created a game console. The system consists of 2 micro controller, one for the wireless controller and one for the console. All code written in C++ using PlatformIO.",
       "contribution": "I was responsible for everything from developing the game to designing the 3D models. I also worked on the communication between the controller and the console I went through some iterations trying different protocols until being satisfied with using the ESP-NOW protocol.",
-      "skills": ["C++", "Arduino", "Fusion360", "ESP-NOW", "PlatformIO", "PHP", "HTML", "CSS"],
+      "skills": [
+        {
+          "name": "C++",
+          "type": "language"
+        },
+        {
+          "name": "Arduino",
+          "type": "framework"
+        },
+        {
+          "name": "Fusion360",
+          "type": "tool"
+        },
+        {
+          "name": "Android Studio",
+          "type": "framework"
+        },
+        {
+          "name": "ESP-NOW",
+          "type": "other"
+        },
+        {
+          "name": "PlatformIO",
+          "type": "framework"
+        },
+        {
+          "name": "HTML",
+          "type": "language"
+        },
+        {
+          "name": "CSS",
+          "type": "language"
+        },
+        {
+          "name": "PHP",
+          "type": "language"	
+        }
+      ],
       "status": "Completed",
       "team": "Solo project",
       "thumbnailPath": "img/hootpursuit/console.jpg",
@@ -72,7 +157,6 @@
           "path": "img/hootpursuit/console.jpg"
         }
       ],
-      "projectURL": "https://www.example.com",
       "githubURL": "https://www.github.com"
     },
     {
@@ -80,7 +164,20 @@
       "name": "A Sol's Journey",
       "description": "Entry in the PirateSoftware - Game Jam 15 with the theme Shadows & Alchemy. The game is a 2D topdown shooter where you play as a little soul named appropiately named Sol. It's a small demo showing some abilities and shooting mechanis ending with a mini boss. The game was developed in a few days together with 2 other students.",
       "contribution": "I was responsible for most parts of the game including the art and coding the game mechanics. The other teammates unfortunately didn't have as much time to dedicate to the project at the time.",
-      "skills": ["C#", "Unity", "Aseprite"],
+      "skills": [
+        {
+          "name": "C#",
+          "type": "language"
+        },
+        {
+          "name": "Unity",
+          "type": "framework"
+        },
+        {
+          "name": "Aseprite",
+          "type": "tool"
+        }
+      ],
       "status": "No longer in development",
       "team": "3 students",
       "thumbnailPath": "img/solsjourney/sol.png",

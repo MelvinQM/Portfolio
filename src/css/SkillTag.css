@@ -3,3 +3,19 @@
     background-color: var(--portfolio-green);
     color: white;
 }
+
+.tag-red {
+    background-color: var(--portfolio-red);
+}
+
+.tag-blue {
+    background-color: var(--portfolio-blue);
+}
+
+.tag-green {
+    background-color: var(--portfolio-green);
+}
+
+.tag-gray {
+    background-color: var(--portfolio-gray);
+}

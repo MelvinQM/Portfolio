@@ -16,7 +16,7 @@ export default function ProjectListItem({ project, className }: { project: Proje
             <h2 className="text-center">{project.name}</h2>
             <img src={`/../assets/${project.thumbnailPath || "img/thumbnails/placeholder.jpg"}`} alt="thumbnail" />
             <div className="mt-2 d-flex flex-wrap gap-2">
-                {project.skills?.map((skill, index) => <SkillTag skillName={skill} key={index} />)}
+                {project.skills?.map((skill, index) => <SkillTag skill={skill} key={index} />)}
             </div>
         </div>
     )

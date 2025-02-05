@@ -3,7 +3,8 @@ interface Project {
     name: string,
     description: string,
     contribution: string,
-    skills: string[],
+    team: string,
+    skills: SkillObject[],
     status: string,
     thumbnailPath?: string,
     media?: MediaObject[],
@@ -11,6 +12,10 @@ interface Project {
     githubURL?: string
 }
 
+interface SkillObject {
+    name: string,
+    type: string,
+}
 interface MediaObject {
     type: string,
     path: string

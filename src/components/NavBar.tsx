@@ -101,7 +101,7 @@ export default function NavBar() {
                 <FontAwesomeIcon className="social-svg" icon={faGithub} />
               </a>
             </div>
-            <button onClick={() => navigate(`${import.meta.env.BASE_URL}contact`)} className="btn btn-primary">
+            <button onClick={() => navigate(`${import.meta.env.BASE_URL}/connect`)}>
               <span>Let's Connect</span>
             </button>
           </span>

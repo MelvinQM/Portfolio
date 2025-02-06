@@ -134,7 +134,7 @@ nav.navbar.scrolled .social-icon a{
     width: 100%;
 }
 .navbar-text button:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 /************ Navbar toggle ************/
 nav.navbar .navbar-toggler:active,

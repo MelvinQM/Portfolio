@@ -28,14 +28,11 @@ export default function ProjectView() {
               {project.media?.map((media, index) => (
                 <Carousel.Item className="carousel-media-container" key={index}>
                   {media.type === "video" ? (
-                    <YoutubeEmbed
-                      className="item"
-                      videoId={media.path}
-                    />
+                    <YoutubeEmbed className="item" videoId={media.path} />
                   ) : (
                     <img
                       className="item"
-                      src={`/assets/${media.path}`}
+                      src={`./assets/${media.path}`}
                       alt="thumbnail"
                     />
                   )}
@@ -48,12 +45,16 @@ export default function ProjectView() {
         <div className="project-info-container">
           <div className="project-info">
             <div>
-              <h5 className="text-start text-muted mb-1 mt-auto">Description</h5>
+              <h5 className="text-start text-muted mb-1 mt-auto">
+                Description
+              </h5>
               <span className="text-start">{project.description}</span>
             </div>
 
             <div className="mt-2">
-              <h5 className="text-start text-muted mb-1 mt-auto">My Contribution</h5>
+              <h5 className="text-start text-muted mb-1 mt-auto">
+                My Contribution
+              </h5>
               <span className="text-start">{project.contribution}</span>
             </div>
 
@@ -66,7 +67,7 @@ export default function ProjectView() {
               <h5 className="text-muted mb-1 mt-auto">Team:</h5>
               <span className="">{project.team}</span>
             </div>
-            
+
             <div className="mt-auto">
               <h5 className="text-muted mb-1 font-bold mt-auto">Skills</h5>
               <div className="d-flex gap-2  flex-wrap m-2">
@@ -75,7 +76,6 @@ export default function ProjectView() {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -88,16 +88,17 @@ export default function ProjectView() {
           <FontAwesomeIcon icon={faGithub} />
           <span className="ms-2">Github Link</span>
         </button>
-                {/* If projectURL is defined, render the button */}
-        {project.projectURL && (
-                <button
-                  onClick={() => (window.location.href = project.githubURL)}
-                  className="project-footer-button">
-                  <FontAwesomeIcon icon={faGlobe} />
-                  <span className="ms-2">Link</span>
-                </button>
-              )}
 
+        {/* If projectURL is defined, render the button */}
+        {project.projectURL && (
+          <button
+            onClick={() => (window.location.href = project.githubURL)}
+            className="project-footer-button"
+          >
+            <FontAwesomeIcon icon={faGlobe} />
+            <span className="ms-2">Link</span>
+          </button>
+        )}
       </div>
     </div>
   );

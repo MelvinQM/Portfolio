@@ -26,7 +26,7 @@ const AppLayout = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/portfolio-website', 
+    path: import.meta.env.BASE_URL, 
     element: <AppLayout />,
     children: [
       { index: true, element: <Home /> },

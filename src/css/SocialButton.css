@@ -1,0 +1,16 @@
+.project-footer-button {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    background-color: inherit;
+    transition: background-color 0.3s ease, color 0.1s ease, box-shadow 0.5s ease;
+}
+
+.project-footer-button:hover {
+    background-color: var(--portfolio-green);
+    color: white;
+    box-shadow: 0 0 0.5em 0em #5e5e5e;
+}

@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom";
 import "../css/ProjectView.css";
 import projectsData from "../data/projects.json";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillTag from "./SkillTag";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { Carousel } from "react-bootstrap";
+import SocialButton from "./SocialButton";
 
 export default function ProjectView() {
   const { projectId } = useParams<{ projectId: string }>(); // Get projectId from URL
@@ -32,7 +33,7 @@ export default function ProjectView() {
                   ) : (
                     <img
                       className="item"
-                      src={`/portfolio-website/assets/${media.path}`}
+                      src={`${import.meta.env.BASE_URL}/assets/${media.path}`}
                       alt="thumbnail"
                     />
                   )}
@@ -81,24 +82,8 @@ export default function ProjectView() {
       </div>
 
       <div className="project-footer">
-        <button
-          onClick={() => (window.location.href = project.githubURL)}
-          className="project-footer-button"
-        >
-          <FontAwesomeIcon icon={faGithub} />
-          <span className="ms-2">Github Link</span>
-        </button>
-
-        {/* If projectURL is defined, render the button */}
-        {project.projectURL && (
-          <button
-            onClick={() => (window.location.href = project.githubURL)}
-            className="project-footer-button"
-          >
-            <FontAwesomeIcon icon={faGlobe} />
-            <span className="ms-2">Link</span>
-          </button>
-        )}
+        <SocialButton url={project.githubURL} icon={faGithub} text={"Github Link"}/>
+        {project.projectURL && ( <SocialButton url={project.projectURL} icon={faGlobe} text={"Link"}/>)}
       </div>
     </div>
   );

@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faM } from '@fortawesome/free-solid-svg-icons';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { SocialLinks } from '../constants';
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
@@ -15,7 +16,7 @@ export default function NavBar() {
   const { hash } = useLocation();
 
   useEffect(() => {
-    let lastScrollY = window.scrollY; // Store last scroll position
+    let lastScrollY = window.scrollY;
   
     const onScroll = () => {
       const currentScrollY = window.scrollY;
@@ -30,7 +31,7 @@ export default function NavBar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   
-
+  const navigate = useNavigate();
   useEffect(() => {
     const section = hash && document.querySelector(hash);
     
@@ -46,7 +47,7 @@ export default function NavBar() {
   return (
     <Navbar expand="md" className={`${scrolled ? 'scrolled' : ''} shadow-effect`}>
       <Container className="navbar-container">
-        <Navbar.Brand as={Link} to="/portfolio-website/">
+        <Navbar.Brand as={Link} to={`${import.meta.env.BASE_URL}`}>
           <div className="navbar-logo d-flex">
             <FontAwesomeIcon className="navbar-logo-border" icon={faSquare} />
             <FontAwesomeIcon className="navbar-logo-m-left" icon={faM} />
@@ -60,7 +61,7 @@ export default function NavBar() {
           <Nav className="me-auto">
             <Nav.Link
               as={Link}
-              to="/portfolio-website/#home"
+              to={`${import.meta.env.BASE_URL}/#home`}
               className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('home')}
             >
@@ -68,7 +69,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/portfolio-website/#about"
+              to={`${import.meta.env.BASE_URL}/#about`}
               className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('about')}
             >
@@ -76,7 +77,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/portfolio-website/#skills"
+              to={`${import.meta.env.BASE_URL}/#skills`}
               className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('skills')}
             >
@@ -84,7 +85,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/portfolio-website/projects"
+              to={`${import.meta.env.BASE_URL}/projects`}
               className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >
@@ -93,14 +94,14 @@ export default function NavBar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/melvin-moes-49652a290/">
+              <a href={SocialLinks.LINKEDIN}>
                 <FontAwesomeIcon className="social-svg" icon={faLinkedinIn} />
               </a>
-              <a href="https://github.com/MelvinQM">
+              <a href={SocialLinks.GITHUB}>
                 <FontAwesomeIcon className="social-svg" icon={faGithub} />
               </a>
             </div>
-            <button onClick={() => console.log('Connect')}>
+            <button onClick={() => navigate(`${import.meta.env.BASE_URL}contact`)} className="btn btn-primary">
               <span>Let's Connect</span>
             </button>
           </span>

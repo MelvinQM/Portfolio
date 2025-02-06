@@ -70,8 +70,8 @@
     {
       "id": 3,
       "name": "Robot on Wheels",
-      "description": "Description 1",
-      "contribution": "I was responsible for the software development of the robot. I programmed the robot to move in random directions and to hit the puck. I also worked on the communication between the robot and the Odroid.",
+      "description": "This project was about creating a 'Robot on Wheels' using an Raspberry Pi. The code was written in C++ and we used OpenCV for the computer vision. The concept for our robot was an Elephant robot that could automatically recognize plants and be able to water them through it's trunk.",
+      "contribution": "I worked on computer vision through Aruco markers, the robot would be able to tell where a plant is and drive to it. I worked with various sensors, and worked on making Android app that could communicate with the robot through MQTT commands.",
       "skills": [
         {
           "name": "C++",

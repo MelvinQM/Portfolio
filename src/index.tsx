@@ -26,8 +26,8 @@ const AppLayout = () => {
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <AppLayout />, // Wrap all pages inside AppLayout
+    path: '/portfolio-website', 
+    element: <AppLayout />,
     children: [
       { index: true, element: <Home /> },
       { path: 'connect', element: <Connect /> },

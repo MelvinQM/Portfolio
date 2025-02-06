@@ -32,7 +32,7 @@ export default function ProjectView() {
                   ) : (
                     <img
                       className="item"
-                      src={`/assets/${media.path}`}
+                      src={`/portfolio-website/assets/${media.path}`}
                       alt="thumbnail"
                     />
                   )}

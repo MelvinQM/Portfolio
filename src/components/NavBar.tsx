@@ -46,7 +46,7 @@ export default function NavBar() {
   return (
     <Navbar expand="md" className={`${scrolled ? 'scrolled' : ''} shadow-effect`}>
       <Container className="navbar-container">
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/portfolio-website/">
           <div className="navbar-logo d-flex">
             <FontAwesomeIcon className="navbar-logo-border" icon={faSquare} />
             <FontAwesomeIcon className="navbar-logo-m-left" icon={faM} />
@@ -60,7 +60,7 @@ export default function NavBar() {
           <Nav className="me-auto">
             <Nav.Link
               as={Link}
-              to="/#home"
+              to="/portfolio-website/#home"
               className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('home')}
             >
@@ -68,7 +68,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/#about"
+              to="/portfolio-website/#about"
               className={activeLink === 'about' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('about')}
             >
@@ -76,7 +76,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/#skills"
+              to="/portfolio-website/#skills"
               className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('skills')}
             >
@@ -84,7 +84,7 @@ export default function NavBar() {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/projects"
+              to="/portfolio-website/projects"
               className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
               onClick={() => onUpdateActiveLink('projects')}
             >

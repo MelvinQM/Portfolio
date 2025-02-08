@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom";
 import "../css/ProjectView.css";
 import projectsData from "../data/projects.json";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import SkillTag from "./SkillTag";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { Carousel } from "react-bootstrap";

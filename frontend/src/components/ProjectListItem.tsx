@@ -6,7 +6,7 @@ export default function ProjectListItem({ project, className }: { project: Proje
     const navigate = useNavigate();
     const handleProjectClick = (projectId: number) => {
         window.scrollTo(0, 0);
-        navigate(`${import.meta.env.BASE_URL}/projects/${projectId}`);
+        navigate(`/projects/${projectId}`);
     };
 
     return (
@@ -17,7 +17,7 @@ export default function ProjectListItem({ project, className }: { project: Proje
             className={className}
             >
             <h2 className="text-center">{project.name}</h2>
-            <img src={`${import.meta.env.BASE_URL}/assets/${project.thumbnailPath || "img/thumbnails/placeholder.jpg"}`} alt="thumbnail" />
+            <img src={`/assets/${project.thumbnailPath || "img/thumbnails/placeholder.jpg"}`} alt="thumbnail" />
 
             <div className="mb-4 mt-4 d-flex flex-wrap gap-2">
                 {project.skills?.map((skill, index) => <SkillTag skill={skill} key={index} />)}

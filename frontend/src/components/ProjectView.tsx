@@ -32,7 +32,7 @@ export default function ProjectView() {
                   ) : (
                     <img
                       className="item"
-                      src={`${import.meta.env.BASE_URL}/assets/${media.path}`}
+                      src={`/assets/${media.path}`}
                       alt="thumbnail"
                     />
                   )}

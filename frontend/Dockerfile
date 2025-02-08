@@ -12,7 +12,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Production
-FROM nginx:stable-alpine as production
+FROM nginx:stable-alpine AS production
 
 # copy nginx configuration inside conf.d folder
 COPY --from=build /app/nginx /etc/nginx/conf.d

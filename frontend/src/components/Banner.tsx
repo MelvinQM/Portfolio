@@ -14,10 +14,12 @@ export default function Banner() {
                   <p>
                     Hello, my name is Melvin Moes. I'm currently in my third year at the
                     <a className="fw-bold custom-a" href="https://www.hva.nl/">&nbsp;Amsterdam University Of Applied Sciences.&nbsp;</a>
-                    In addition to my studies, I work part-time as a software developer at Chipsoft.
+                    In addition to my studies, I work part-time as a software developer at 
+                    <a className="fw-bold custom-a" href="https://www.chipsoft.com/">&nbsp;Chipsoft.&nbsp;</a> 
+                    which is a leading healthcare software company in the Netherlands.
                   </p>
                   <p>
-                    I enjoy learning new skills in fields such as Software Development, Embedded Systems and Game Development.
+                    Outside of my job and education I also enjoy learning new skills in fields such as Software Development, Embedded Systems, CAD and Game Development.
                   </p>
                 </div>
             </Col>

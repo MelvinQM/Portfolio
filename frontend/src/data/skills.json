@@ -10,10 +10,6 @@
       "relatedSkills": ["C/C++", "PlatformIO", "Arduino"]
     },
     {
-      "name": "Teamwork",
-      "percentage": 90
-    },
-    {
       "name": "Software Development",
       "percentage": 80,
       "relatedSkills": ["Java", "Python"]
@@ -21,6 +17,6 @@
     {
       "name": "Game Development",
       "percentage": 65,
-      "relatedSkills": ["C#", "Unity"]
+      "relatedSkills": ["C#", "Unity", "Godot"]
     }
   ]

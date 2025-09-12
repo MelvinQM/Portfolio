@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faM } from '@fortawesome/free-solid-svg-icons';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { SocialLinks } from '../constants';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState('home');
@@ -31,7 +32,6 @@ export default function NavBar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   
-  const navigate = useNavigate();
   useEffect(() => {
     const section = hash && document.querySelector(hash);
     
@@ -100,10 +100,10 @@ export default function NavBar() {
               <a href={SocialLinks.GITHUB}>
                 <FontAwesomeIcon className="social-svg" icon={faGithub} />
               </a>
+              <a href={SocialLinks.MAIL} aria-label="Send me an email">
+                <FontAwesomeIcon className="social-svg" icon={faEnvelope} />
+              </a>
             </div>
-            <button onClick={() => navigate(`/connect`)}>
-              <span>Let's Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>

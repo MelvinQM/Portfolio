@@ -24,10 +24,6 @@
         {
           "type": "image",
           "path": "img/fys/fys.gif"
-        },
-        {
-          "type": "video",
-          "path": "video/placeholder.mp4"
         }
       ],
       "thumbnailPath": "img/fys/fys.gif",
@@ -185,10 +181,6 @@
         {
           "type": "image",
           "path": "img/solsjourney/sol.png"
-        },
-        {
-          "type": "video",
-          "path": "-m3nsi4TqE0?si=1nSkNjb0WJsWXjpD"
         }
       ],
       "projectURL": "https://mevevlin.itch.io/a-sols-adventure",

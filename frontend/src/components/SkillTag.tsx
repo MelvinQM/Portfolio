@@ -1,11 +1,9 @@
 import '../css/SkillTag.css'
 
 export default function SkillTag({skill}: {skill : SkillObject}) {
-
-    console.log(skill)
     if (!skill) {
         console.log("Skill is undefined in SkillTag: ", skill);
-        return null;  // Prevents rendering an invalid component
+        return null;
     }
 
     const getSkillColor = (skillType: string) => {

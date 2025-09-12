@@ -1,7 +1,7 @@
 [
   {
     "order": 2,
-    "date": "02/24 - 06/24",
+    "date": "02/2024 - 06/2024",
     "jobTitle": "Research & Development",
     "company": "Van Berge Henegouwen",
     "companyURL": "https://www.vbhi.com/",
@@ -10,7 +10,7 @@
   },
   {
     "order": 1,
-    "date": ["08/23 - 01/24", "08/24 - Present"],
+    "date": ["08/2023 - 01/2024", "08/2024 - Present"],
     "jobTitle": "Research & Development",
     "company": "Chipsoft",
     "companyURL": "https://www.chipsoft.com/",
@@ -19,7 +19,7 @@
   },
   {
     "order": 3,
-    "date": "01/20 - Present",
+    "date": "01/2020 - Present",
     "jobTitle": "Helpdesk / Administration",
     "company": "Compuclub",
     "skills": [""],

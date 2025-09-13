@@ -185,5 +185,41 @@
       ],
       "projectURL": "https://mevevlin.itch.io/a-sols-adventure",
       "githubURL": "https://www.github.com"
+    },
+    {
+      "id": 6,
+      "name": "Alchimea Calibration - VBH Internship",
+      "description": "The alchimea project by Van Berge Henegouwen is consists of many products that are hidden in the environment.",
+      "contribution": "During my internship I worked on creating a calibration tool for the Alchimea display system. I worked on graphics with Three.js, web development with Typescript, CAD for PCB creation and 3D printing and embedded programming through the Arduino library and C++.",
+      "skills": [
+        {
+          "name": "C++",
+          "type": "language"
+        },
+        {
+          "name": "Arduino",
+          "type": "framework"
+        },
+        {
+          "name": "Fusion360",
+          "type": "tool"
+        }
+      ],
+      "thumbnailPath": "img/vbh/alchimea.png",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/vbh/alchimea.png"
+        },
+        {
+          "type": "image",
+          "path": "img/vbh/prototype_render_warm_to_cool.png"
+        },
+        {
+          "type": "video",
+          "path": "RMgzy-A3AAM"
+        }
+      ],
+      "projectURL": "https://www.vbhi.com/our-portfolio/highlighted-products/design-integration-alchimia/alchimia-the-collection"
     }
 ] 

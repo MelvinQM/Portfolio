@@ -24,7 +24,7 @@ export default function ProjectView() {
       <div className="project-content">
         <div className="project-media-container">
           <div className="project-media">
-            <Carousel className="w-100" interval={null}>
+            <Carousel className="w-100 h-100" interval={null}>
               {project.media?.map((media, index) => (
                 <Carousel.Item className="carousel-media-container" key={index}>
                   {media.type === "video" ? (
@@ -58,15 +58,19 @@ export default function ProjectView() {
               <span className="text-start">{project.contribution}</span>
             </div>
 
-            <div className="mt-2">
-              <h5 className="text-muted mb-1 mt-auto">Status:</h5>
-              <span className="">{project.status}</span>
-            </div>
+            {project.status && 
+              <div className="mt-2">
+                <h5 className="text-muted mb-1 mt-auto">Status:</h5>
+                <span className="">{project.status}</span>
+              </div>
+            }
 
-            <div className="mt-2">
-              <h5 className="text-muted mb-1 mt-auto">Team:</h5>
-              <span className="">{project.team}</span>
-            </div>
+            {project.team && 
+              <div className="mt-2">
+                <h5 className="text-muted mb-1 mt-auto">Team:</h5>
+                <span className="">{project.team}</span>
+              </div>
+            }
 
             <div className="mt-auto">
               <h5 className="text-muted mb-1 font-bold mt-auto">Skills</h5>
@@ -81,8 +85,8 @@ export default function ProjectView() {
       </div>
 
       <div className="project-footer">
-        <SocialButton url={project.githubURL} icon={faGithub} text={"Github Link"}/>
-        {project.projectURL && ( <SocialButton url={project.projectURL} icon={faGlobe} text={"Link"}/>)}
+        {project.githubURL && <SocialButton url={project.githubURL} icon={faGithub} text={"Github Link"}/>}
+        {project.projectURL && <SocialButton url={project.projectURL} icon={faGlobe} text={"Link"}/>}
       </div>
     </div>
   );

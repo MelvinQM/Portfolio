@@ -33,6 +33,7 @@
 
 .project-media {
     max-height: 98%;
+    height: 100%;
     min-width: 98%;
     display: flex;
     justify-content: center;
@@ -61,7 +62,7 @@
 }
 
 img.item {
-    max-width: 98%;
+    max-width: 75%;
     max-height: 98%;
     object-fit: contain;
     margin: auto;
@@ -69,7 +70,7 @@ img.item {
 /* Info element section */
 .project-info-container {
     background-color: var(--primary-color);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 2px 4px 8px 2px;
     border-radius: 10px;
     width: 600px;
     height: 500px;
@@ -93,3 +94,21 @@ img.item {
 
 
 
+/* Media Queries for smaller screens */
+@media (max-width: 1024px) {
+    .project-media-container {
+        width: 600px;
+    }
+    .project-info-container {
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-media-container {
+        width: 400px;
+    }
+    .project-info-container {
+        width: 400px;
+    }
+}

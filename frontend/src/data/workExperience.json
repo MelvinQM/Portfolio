@@ -2,7 +2,7 @@
   {
     "order": 2,
     "date": "02/2024 - 06/2024",
-    "jobTitle": "Research & Development",
+    "jobTitle": "Intern Embedded Developer",
     "company": "Van Berge Henegouwen",
     "companyURL": "https://www.vbhi.com/",
     "skills": ["C++", "Arduino", "WebGL", "Typescript", "Vue.js"],
@@ -11,7 +11,7 @@
   {
     "order": 1,
     "date": "08/2023 - Present",
-    "jobTitle": "Research & Development",
+    "jobTitle": "Fullstack R&D",
     "company": "Chipsoft",
     "companyURL": "https://www.chipsoft.com/",
     "skills": ["C#", ".NET", "Blazor"],
@@ -22,7 +22,8 @@
     "date": "01/2020 - Present",
     "jobTitle": "Helpdesk / Administration",
     "company": "Compuclub",
-    "skills": [""],
-    "description": "My activities at Compuclub include managing company's email correspondence, invoicing payments, and various tasks such as creating logos/posters and more in Photoshop."
+    "companyURL": "https://www.compuclub.nl/",
+    "skills": ["PHP", "React"],
+    "description": "My activities at Compuclub include managing company's email correspondence, invoicing payments, and various tasks such as creating logos/posters and more in Photoshop. I've also built applications to help with helpdesk tasks using PHP and React."
   }
 ]

@@ -22,6 +22,10 @@
   margin-bottom: 2em;
 }
 
+.experience-date {
+  color: var(--subtext-color);
+}
+
 .experience-skills {
   text-align: left;
   display: flex;

@@ -180,7 +180,12 @@
       "media": [
         {
           "type": "image",
-          "path": "img/solsjourney/sol.png"
+          "path": "img/solsjourney/title_screen.png"
+        },
+        {
+          "type": "image",
+          "path": "img/solsjourney/gameplay.png"
+
         }
       ],
       "projectURL": "https://mevevlin.itch.io/a-sols-adventure",

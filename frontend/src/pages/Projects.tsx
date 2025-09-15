@@ -1,5 +1,5 @@
 import ProjectListItem from '../components/ProjectListItem'
-import '../css/Projects.css'
+import './Projects.css'
 import projectsData from '../data/projects.json'
 import { Outlet } from 'react-router-dom'
 

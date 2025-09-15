@@ -1,4 +1,4 @@
-import '../css/Skills.css'
+import './Skills.css'
 import "react-multi-carousel/lib/styles.css";
 import Carousel from 'react-multi-carousel';
 import { CircularSliderWithChildren } from 'react-circular-slider-svg';

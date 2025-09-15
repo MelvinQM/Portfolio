@@ -1,4 +1,4 @@
-import '../css/SkillTag.css'
+import './SkillTag.css'
 
 export default function SkillTag({skill}: {skill : SkillObject}) {
     if (!skill) {

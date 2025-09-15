@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import "../css/ProjectView.css";
+import "./ProjectView.css";
 import projectsData from "../data/projects.json";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";

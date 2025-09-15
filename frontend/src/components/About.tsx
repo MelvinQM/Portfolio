@@ -1,4 +1,4 @@
-import '../css/About.css'
+import './About.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import workExperienceData from '../data/workExperience.json'
 

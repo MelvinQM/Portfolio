@@ -1,6 +1,6 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import '../css/SocialButton.css'
+import './SocialButton.css'
 
 export default function SocialButton({url, icon, text}: {url : string, icon : IconProp, text : string}) {
     return (

@@ -9,7 +9,7 @@ import NotFound from './pages/NotFound';
 import NavBar from './components/NavBar'
 import ProjectView from './components/ProjectView';
 
-import './css/index.css'
+import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const AppLayout = () => {

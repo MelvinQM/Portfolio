@@ -54,7 +54,7 @@ export default function NavBar() {
             onToggle={() => setExpanded(!expanded)}
         >
             <Container className="navbar-container">
-                <Navbar.Brand as={Link} to={`/`}>
+                <Navbar.Brand as={Link} to={`/#home`} onClick={() => onUpdateActiveLink("home")}>
                     <div className="navbar-logo d-flex">
                         <FontAwesomeIcon
                             className="navbar-logo-border"

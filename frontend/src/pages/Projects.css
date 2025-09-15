@@ -9,9 +9,9 @@
     gap: 20px;
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); /* items no longer stretch */
-    align-items: start;
-    justify-content: center; /* centers items in each row */
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: stretch; /* ✅ make items equal height per row */
+    justify-content: center;
 }
 
 

@@ -1,0 +1,21 @@
+
+.list-item h2 {
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+}
+.skills-container {
+    margin: 1em 0 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: auto; /* pushes it down when there's extra space */
+}

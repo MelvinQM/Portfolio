@@ -73,7 +73,7 @@ img.item {
     box-shadow: rgba(99, 99, 99, 0.2) 2px 4px 8px 2px;
     border-radius: 10px;
     width: 600px;
-    height: 500px;
+    min-height: 500px;
 }
 
 .project-info {

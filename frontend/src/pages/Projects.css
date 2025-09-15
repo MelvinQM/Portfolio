@@ -9,9 +9,11 @@
     gap: 20px;
     display: grid;
     width: 80%;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    align-items: start; /* Ensures cards don't stretch */
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); /* items no longer stretch */
+    align-items: start;
+    justify-content: center; /* centers items in each row */
 }
+
 
 .project {
     background-color: white;

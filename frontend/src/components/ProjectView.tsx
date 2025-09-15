@@ -24,21 +24,36 @@ export default function ProjectView() {
       <div className="project-content">
         <div className="project-media-container">
           <div className="project-media">
-            <Carousel className="w-100 h-100" interval={null}>
-              {project.media?.map((media, index) => (
-                <Carousel.Item className="carousel-media-container" key={index}>
-                  {media.type === "video" ? (
-                    <YoutubeEmbed className="item" videoId={media.path} />
-                  ) : (
-                    <img
-                      className="item"
-                      src={`/assets/${media.path}`}
-                      alt="thumbnail"
-                    />
-                  )}
-                </Carousel.Item>
-              ))}
-            </Carousel>
+            {project.media && project.media.length > 1 ? (
+              <Carousel className="w-100 h-100" interval={null}>
+                {project.media.map((media, index) => (
+                  <Carousel.Item className="carousel-media-container" key={index}>
+                    {media.type === "video" ? (
+                      <YoutubeEmbed className="item" videoId={media.path} />
+                    ) : (
+                      <img
+                        className="item"
+                        src={`/assets/${media.path}`}
+                        alt="thumbnail"
+                      />
+                    )}
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            ) : (
+              project.media?.map((media, index) =>
+                media.type === "video" ? (
+                  <YoutubeEmbed className="item" videoId={media.path} key={index} />
+                ) : (
+                  <img
+                    className="item"
+                    src={`/assets/${media.path}`}
+                    alt="thumbnail"
+                    key={index}
+                  />
+                )
+              )
+            )}
           </div>
         </div>
 

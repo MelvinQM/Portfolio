@@ -27,7 +27,7 @@
         }
       ],
       "thumbnailPath": "img/fys/fys.gif",
-      "githubURL": "https://www.github.com"
+      "githubURL": "https://github.com/MelvinQM/FYS"
     },
     {
       "id": 2,
@@ -61,7 +61,7 @@
         }
       ],
       "thumbnailPath": "img/pad/nao-robot.jpg",
-      "githubURL": "https://www.github.com"
+      "githubURL": "https://github.com/MelvinQM/PAD"
     },
     {
       "id": 3,
@@ -99,7 +99,7 @@
           "path": "img/row/dumbot.jpg"
         }
       ],
-      "githubURL": "https://www.github.com"
+      "githubURL": "https://github.com/MelvinQM/ROW-04"
     },
     {
       "id": 4,
@@ -153,7 +153,7 @@
           "path": "img/hootpursuit/console.jpg"
         }
       ],
-      "githubURL": "https://www.github.com"
+      "githubURL": "https://github.com/MelvinQM/IOT-Personal"
     },
     {
       "id": 5,
@@ -189,7 +189,7 @@
         }
       ],
       "projectURL": "https://mevevlin.itch.io/a-sols-adventure",
-      "githubURL": "https://www.github.com"
+      "githubURL": "https://github.com/MelvinQM/A-Sols-Adventures-GameJam-"
     },
     {
       "id": 6,
@@ -226,5 +226,73 @@
         }
       ],
       "projectURL": "https://www.vbhi.com/our-portfolio/highlighted-products/design-integration-alchimia/alchimia-the-collection"
+    },
+    {
+      "id": 7,
+      "name": "Ticketsysteem - Chipsoft",
+      "status": "Completed",
+      "description": "The ticketsystem for chipsoft was an internal project to manage and keep track of issues within the company. The system was built using Blazor and .NET for the backend",
+      "contribution": "I was responsible for a variety of tasks such as Frontend and Backend development and database management. I worked closely with the team to ensure that the system met the needs of the company.",
+      "team": "2 Employees",
+      "skills": [
+        {
+          "name": "C#",
+          "type": "language"
+        },
+        {
+          "name": "Blazor",
+          "type": "framework"
+        },
+        {
+          "name": ".NET",
+          "type": "framework"
+        },
+        {
+          "name": "SQL",
+          "type": "language"
+        }
+      ],
+      "thumbnailPath": "img/chipsoft/chipsoft-logo.png",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/chipsoft/chipsoft-logo.png"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "XArm - 3D Scan",
+      "status": "Completed",
+      "description": "This project was part of the minor Autonomous Systems. The goal was to create a 3D scanner using a xArm robotic arm and an Intel Realsense Camera",
+      "contribution": "I worked on controlling the arm movements through kinematics and creating point clouds from the camera's depth data.",
+      "team": "2 Students",
+      "skills": [
+        {
+          "name": "Python",
+          "type": "language"
+        },
+        {
+          "name": "Computer vision",
+          "type": "tool"
+        },
+        {
+          "name": "Kinematics",
+          "type": "other"
+        }
+      ],
+      "thumbnailPath": "img/xarm/xarm.png",
+      "media": [
+        {
+          "type": "image",
+          "path": "img/xarm/xarm.png"
+        },
+        {
+          "type": "image",
+          "path": "img/xarm/realsense.png"
+        }
+      ],
+      "githubURL": "https://github.com/MelvinQM/3D-Scan-X-Arm"
     }
+
 ] 

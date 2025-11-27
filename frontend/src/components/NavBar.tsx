@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState, useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faFilePdf, faM } from "@fortawesome/free-solid-svg-icons";
+import { faM } from "@fortawesome/free-solid-svg-icons";
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import { Link, useLocation } from "react-router-dom";
 import { SocialLinks } from "../constants";

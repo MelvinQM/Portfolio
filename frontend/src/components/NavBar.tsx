@@ -15,7 +15,7 @@ export default function NavBar() {
     const [activeLink, setActiveLink] = useState("home");
     const [scrolled, setScrolled] = useState(false);
     const [expanded, setExpanded] = useState(false);
-    const { hash } = useLocation();
+    const { pathname, hash } = useLocation();
 
     useEffect(() => {
         let lastScrollY = window.scrollY;
@@ -34,12 +34,18 @@ export default function NavBar() {
     }, []);
 
     useEffect(() => {
-        const section = hash && document.querySelector(hash);
+        // If navigating to a normal route (like /projects)
+        if (!hash) {
+            window.scrollTo({ top: 0, left: 0 });
+            return;
+        }
 
-        if (section) section.scrollIntoView({ behavior: "smooth" });
-
-        if (hash === "#home") window.scrollTo(0, 0);
-    }, [hash]);
+        // If navigating to a hash section
+        const section = document.querySelector(hash);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }, [pathname, hash]);
 
     const onUpdateActiveLink = useCallback((value: string) => {
       setActiveLink(value);

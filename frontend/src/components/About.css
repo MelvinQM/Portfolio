@@ -54,6 +54,33 @@
 }
 
 
+.projects-btn {
+  padding: 14px 36px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 999px;
+  
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.projects-btn:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+}
+
+.projects-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
 
 /*
 https://www.youtube.com/watch?v=hWGgw1K-i8Y

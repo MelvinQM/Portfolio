@@ -104,7 +104,7 @@
     {
       "id": 4,
       "name": "IoT Game console",
-      "description": "For my time following the minor Internet of Things I created a game console. The system consists of 2 micro controller, one for the wireless controller and one for the console. All code written in C++ using PlatformIO.",
+      "description": "For my time following the minor Internet of Things I created a game console. The system consists of 2 micro controllers, one for the wireless controller and one for the console. All code written in C++ using PlatformIO.",
       "contribution": "I was responsible for everything from developing the game to designing the 3D models. I also worked on the communication between the controller and the console I went through some iterations trying different protocols until being satisfied with using the ESP-NOW protocol.",
       "skills": [
         {
@@ -294,5 +294,4 @@
       ],
       "githubURL": "https://github.com/MelvinQM/3D-Scan-X-Arm"
     }
-
 ] 

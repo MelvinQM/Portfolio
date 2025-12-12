@@ -1,11 +1,12 @@
 import './About.css'
 import { Col, Container, Row } from 'react-bootstrap'
 import workExperienceData from '../data/workExperience.json'
+import { useNavigate } from 'react-router-dom'
 
 
 export default function About() {
   const workExperience: WorkExperience[] = workExperienceData
-
+  const navigate = useNavigate()
   return (
     <section className="box about-section" id="about">
       <Container>
@@ -40,6 +41,16 @@ export default function About() {
             </div>
           </Col>
         </Row>
+        <div className='d-flex justify-content-center pb-4'>
+          <button onClick={() => {
+                    navigate('/projects')
+                    window.scrollTo(0, 0)
+                  }} 
+                  className='projects-btn'
+          >
+            See projects
+          </button>
+        </div>
       </Container>
     </section>
   )

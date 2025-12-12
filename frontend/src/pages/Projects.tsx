@@ -10,7 +10,7 @@ export default function Projects() {
   }))
 
   return (
-    <>
+    <div className='mt-5'>
       {/* Renders individual project when selected */}
       <div className='project-section'>
         <Outlet />
@@ -25,6 +25,6 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }

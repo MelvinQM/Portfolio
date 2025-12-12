@@ -101,18 +101,6 @@ export default function NavBar() {
                         </Nav.Link>
                         <Nav.Link
                             as={Link}
-                            to={`/#skills`}
-                            className={
-                                activeLink === "skills"
-                                    ? "active navbar-link"
-                                    : "navbar-link"
-                            }
-                            onClick={() => onUpdateActiveLink("skills")}
-                        >
-                            Skills
-                        </Nav.Link>
-                        <Nav.Link
-                            as={Link}
                             to={`/projects`}
                             className={
                                 activeLink === "projects"

@@ -21,6 +21,9 @@ export default function Banner() {
                   <p>
                     Outside of my job and education I also enjoy learning new skills in fields such as Software Development, Embedded Systems, CAD and Game Development.
                   </p>
+                  <p className='fw-bold mt-4'>
+                    Experiences in: Full-Stack Development, Embedded Systems, C/C++, C#, .NET, Blazor, Python, JavaScript, TypeScript, React, SQL, Git.
+                  </p>
                 </div>
             </Col>
             <Col xs={12} md={6} xl={5}>
